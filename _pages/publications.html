@@ -5,32 +5,187 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
-{% include base_path %}
+<!-- <div class="wrapper">
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+    <h2>Peer-Reviewed Papers</h2>
+    <div class="post-content">
+    <ul class="publications"> -->
+        <div class="article" style="margin-bottom: 20px;">
+        <span class="title""> 
+          <a href="https://arxiv.org/pdf/2406.11704">
+            Nemotron-4 340B Technical Report
+        </a>
+        </span>
+        <span class="authors" style="display: block;"><strong>Shengyang Sun</strong> et al.</span>
+        <span class="journal-info" style="display: block;">Techical Report.<span>
+        </span></span><img src="/images/nemotron-sdg.png" alt="Nemotron-4-340B-Instruct Synthetic Data Generation" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title"">
+            <a href="https://arxiv.org/pdf/2405.01481">
+              NeMo-Aligner: Scalable Toolkit for Efficient Model Alignment
+          </a>
+          </span>
+          <span class="authors" style="display: block;">Gerald Shen, Zhilin Wang, Olivier Delalleau, Jiaqi Zeng, Yi Dong, Daniel Egert, <strong>Shengyang Sun</strong>, Jimmy Zhang, Sahil Jain, Ali Taghibakhshi, Markel Sanz Ausin, Ashwath Aithal, Oleksii Kuchaiev</span>
+          <span class="journal-info" style="display: block;">COLM 2024.<span>
+          </span></span><img src="/images/nemo-aligner.png" alt="PPO Pipeline in Nemo-Aligner" style="width: 100%; max-width: 800px;"></div>
+
+          <div class="article" style="margin-bottom: 20px;">
+          <span class="title"">
+            <a href="https://openreview.net/forum?id=IpctgL7khPp">
+	     Information-theoretic Online Memory Selection for Continual Learning
+          </a>
+          </span>
+          <span class="authors" style="display: block;"><strong>Shengyang Sun</strong>, Daniele Calandriello, Huiyi Hu, Ang Li, Michalis Titsias</span>
+          <span class="journal-info" style="display: block;">ICLR 2022.<span>
+          </span></span><img src="/images/infors.png" alt="Online Memory Selection" style="width: 100%; max-width: 800px;"></div>
 
 
+          <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://openreview.net/forum?id=Qycd9j5Qp9J">
+             Understanding the Variance Collapse of SVGD in High Dimensions
+          </a>
+          </span>
+          <span class="authors" style="display: block;"> Jimmy Ba, Murat A Erdogdu, Marzyeh Ghassemi, <strong>Shengyang Sun</strong>, Taiji Suzuki, Denny Wu, Tianzong Zhang</span>
+          <span class="journal-info" style="display: block;">ICLR 2022.<span>
+          </span></span><img src="/images/svgd.png" alt="MMD-Descent recovers the Ground-Truth HMC Posterior" style="width: 100%; max-width: 800px;"></div>
 
+          <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="http://proceedings.mlr.press/v139/sun21d/sun21d.pdf">
+	     Scalable Variational Gaussian Processes via Harmonic Kernel Decomposition
+          </a>
+          </span>
+          <span class="authors" style="display: block;"><strong>Shengyang Sun</strong>, Jiaxin Shi, Andrew Gordon Wilson, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">ICML 2021.<span>
+          </span></span><img src="/images/hvgp.png" alt="Orthogonally Decomposed Gaussian Processes" style="width: 100%; max-width: 800px;"></div>
+
+          <div class="article" style="margin-bottom: 20px;">
+            <span class="title">
+              <a href="https://openreview.net/forum?id=NgqYp7sAW6t">
+         Neural Networks as Inter-Domain Inducing Points
+            </a>
+            </span>
+            <span class="authors" style="display: block;"><strong>Shengyang Sun*</strong>, Jiaxin Shi*, Roger Grosse</span>
+            <span class="journal-info" style="display: block;">AABI 2021.<span>
+            </span></span><img src="/images/nnasgp.png" alt="A two-layer neural network is equivalent to a sparse Gaussian process" style="width: 100%; max-width: 600px;"></div>
+
+
+	  <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/2011.03178">
+             Beyond Marginal Uncertainty: How Accurately can Bayesian Regression Models Estimate Posterior Predictive Correlations?<span style="color: red">[oral]</span>
+          </a>
+          </span>
+          <span class="authors" style="display: block;">Chaoqi Wang*, <strong>Shengyang Sun*</strong>, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">AISTATS 2021.<span>
+        </span></span><img src="/images/predictive-corr.png" alt="Predictive posterior correlations" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1908.07585">
+             Fast-rate PAC-Bayes Generalization Bounds via Shifted Rademacher Processes
+          </a>
+          </span>
+          <span class="authors" style="display: block;">Jun Yang*, <strong>Shengyang Sun*</strong>, Daniel M. Roy</span>
+	  <span class="journal-info" style="display: block;">NeurIPS 2019.<span>
+        </span></span><img src="/images/fast-rate-pac-bayes.png" alt="Fast-Rate PAC-Bayes Generalization Bounds" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1903.05779">
+             Functional Variational Bayesian Neural Networks
+          </a>
+          </span>
+          <span class="authors" style="display: block;"><strong>Shengyang Sun*</strong>, Guodong Zhang*, Jiaxin Shi*, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">ICLR 2019.<span>
+        </span></span><img src="/images/fbnn.png" alt="FBNN learns from implicit piecewise constant/linear function priors" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1804.00325">
+              Aggregated Momentum: Stability Through Passive Damping
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">James Lucas, <strong>Shengyang Sun</strong>, Richard Zemel, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">ICLR 2019.<span>
+        </span></span><img src="/images/aggmo.png" alt="Aggregated Momentum" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1806.04326">
+              Differentiable Compositional Kernel Learning for Gaussian Processes
+          </a>
+          </span>
+          <span class="authors" style="display: block;"><strong>Shengyang Sun</strong>, Guodong Zhang, Chaoqi Wang, Wenyuan Zeng, Jiaman Li, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">ICML 2018.<span>
+        </span></span><img src="/images/nkn.png" alt="Neural Kernel Network learns GP priors automatically from training data." style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1712.02390">
+              Noisy Natural Gradient as Variational Inference
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">Guodong Zhang*, <strong>Shengyang Sun*</strong>, David Duvenaud, Roger Grosse</span>
+          <span class="journal-info" style="display: block;">ICML 2018.<span>
+        </span></span><img src="/images/nng.png" alt="Gaussian Variational Posteriors" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1806.02925">
+              A Spectral Approach to Gradient Estimation for Implicit Distributions
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">Jiaxin Shi, <strong>Shengyang Sun</strong>, Jun Zhu</span>
+          <span class="journal-info" style="display: block;">ICML 2018.<span>
+        </span></span><img src="/images/ssge.png" alt="Image Generation using the SSGE " style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1705.10119">
+              Kernel implicit variational inference
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">Jiaxin Shi*, <strong>Shengyang Sun*</strong>, Jun Zhu</span>
+          <span class="journal-info" style="display: block;">ICLR 2018.<span>
+        </span></span><img src="/images/kivi.png" alt="Image Inteporation" style="width: 100%; max-width: 600px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://arxiv.org/abs/1709.05870">
+              ZhuSuan: A library for Bayesian deep learning
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">Jiaxin Shi, Jianfei Chen, Jun Zhu, <strong>Shengyang Sun</strong>, Yucen Luo, Yihong Gu, Yuhao Zhou</span>
+          <img src="/images/zhusuan.png" alt="ZhuSuan Implementation for Bayesian neural networks" style="width: 100%; max-width: 800px;">
+        </div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="http://proceedings.mlr.press/v54/sun17b.html">
+              Learning structured weight uncertainty in bayesian neural networks
+          </a> 
+          </span>
+          <span class="authors" style="display: block;"><strong>Shengyang Sun</strong>, Changyou Chen, Lawrence Carin</span>
+          <span class="journal-info" style="display: block;">AISTATS 2017.<span>
+        </span></span><img src="/images/pbp_mvg.png" alt="Bayesian neural networks weights with matrix-variate Gaussian posteriors" style="width: 100%; max-width: 800px;"></div>
+
+        <div class="article" style="margin-bottom: 20px;">
+          <span class="title">
+            <a href="https://ieeexplore.ieee.org/iel7/4234/5534602/07420605.pdf">
+              On the Spectral Efficiency of Massive MIMO Systems With Low-Resolution ADCs.
+          </a> 
+          </span>
+          <span class="authors" style="display: block;">Jiayi Zhang, Linglong Dai, <strong>Shengyang Sun</strong>, Zhaocheng Wang</span>
+          <span class="journal-info" style="display: block;">IEEE Communications Letters 2016.<span>
+        </span></span><img src="/images/mimo.png" alt="MIMO" style="width: 100%; max-width: 800px;"></div>
+
+
+    <!-- </ul>
+    </div>
+    <span class="footnote">* denotes equal contribution.</span>
+    </article>
+</div> -->
