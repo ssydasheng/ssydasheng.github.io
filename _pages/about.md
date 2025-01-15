@@ -18,5 +18,6 @@ Specifically, my research at NVIDIA focuses on improving large language model pe
 
 ### NEWS
 
+* 2024.12, my research regarding "**Knowledge Distillation in Model Alignment**" goes out in [NeMo-Aligner](https://docs.nvidia.com/nemo-framework/user-guide/latest/modelalignment/knowledge-distillation.html) and [NVIDIA Technical Blog](https://developer.nvidia.com/blog/data-efficient-knowledge-distillation-for-supervised-fine-tuning-with-nvidia-nemo-aligner/).
 * 2024.06, our model alignment toolcase, **NeMo-Aligner**, is accepted in COLM 2024.
-* 2024.04, our model **Nemotron-4-340B-Instruct** is realeased ([blog](https://developer.nvidia.com/blog/leverage-our-latest-open-models-for-synthetic-data-generation-with-nvidia-nemotron-4-340b/), [HF](https://huggingface.co/nvidia/Nemotron-4-340B-Instruct)). We also open-sourced our synthetic data generation pipeline to traing the model.
+* 2024.04, our model **Nemotron-4-340B-Instruct** (me as the leading author) is realeased ([blog](https://developer.nvidia.com/blog/leverage-our-latest-open-models-for-synthetic-data-generation-with-nvidia-nemotron-4-340b/), [HF](https://huggingface.co/nvidia/Nemotron-4-340B-Instruct)). We also open-sourced our synthetic data generation pipeline to traing the model.
